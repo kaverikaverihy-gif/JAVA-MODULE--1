@@ -1,0 +1,18 @@
+import java.util.*;
+class SumAverage{
+    public static void main(String[]args){
+        int sum=0;
+        System.out.println("Enter the size of array:");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter the "+n+" array elements:");
+        for(int i=0;i<n;i++)
+        arr[i]=sc.nextInt();
+        for(int i=0;i<n;i++)
+        sum=sum+arr[i];
+        System.out.println("sum of array elements are: "+sum);
+        int avg=sum/n;
+        System.out.println("The average of elements is: "+avg);
+    }
+}
